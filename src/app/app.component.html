@@ -1,0 +1,246 @@
+<div id="app relative">
+  <app-header></app-header>
+  <div id="main-content" class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="row-height">
+        <div
+          class="col-md-3 hidden-md hidden-sm hidden-xs col-md-height col-md-top custom-vertical-left-border custom-vertical-right-border grey-background"
+        >
+          <div class="row">
+            <div class="col-md-12"><h4></h4></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-primary center-block">
+                <div class="panel-heading text-center">
+                  <h3 class="panel-title">Today's photo</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="row text-center">
+                    <div class="col-md-12" id="divSwirl">
+                      <div style="transition: 0.3s linear">
+                        <div
+                          style="
+                            animation: 0.3s linear 0s 10 normal none running
+                              RSI-xr116zylv;
+                          "
+                        >
+                          <div
+                            style="
+                              animation: 0.3s linear 0s 1 alternate none running
+                                RSI-lrf3b1g52;
+                            "
+                          >
+                            <table
+                              class="photo-frame"
+                              style="min-height: 200px; visibility: visible"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td class="topx--"></td>
+                                  <td class="top-x-"></td>
+                                  <td class="top--x"></td>
+                                </tr>
+                                <tr>
+                                  <td class="midx--"></td>
+                                  <td>
+                                    <a href="/details/0/0/-?6324"
+                                      ><img
+                                        src="/Handler/Index/PhotoID=0/Size=M?6324"
+                                        alt=""
+                                        style="
+                                          border: 4px solid white;
+                                          max-height: 100%;
+                                          max-width: 100%;
+                                          vertical-align: middle;
+                                        "
+                                    /></a>
+                                  </td>
+                                  <td class="mid--x"></td>
+                                </tr>
+                                <tr>
+                                  <td class="botx--"></td>
+                                  <td class="bot-x-"></td>
+                                  <td class="bot--x"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row text-center">
+                    <hr />
+                    <div id="divText" style="min-height: 60px">Photos</div>
+                    <div id="divDownload" style="min-height: 50px">
+                      <p>
+                        <a href="/Handler/Download/0/M"
+                          ><img
+                            src="data:image/gif;base64,R0lGODlhjAAWANU0AP39/enp6dPT09MlJdLS0ujo6Ofn59jY2Ovr69c5Oc0HB+F3d+3AwPLY2OLi4uF/f+2oqM0FBd9lZf74+PTGxttXV+SBgfLExNU3N+iLi/DW1uJ5efTJyffZ2fjb2/bw8Pvp6d1WVtbW1uDg4Pr6+vz8/P7+/vX19fv7+/n5+fLy8u/v7/b29vT09O7u7vDw8Pf39/Pz88wAAP///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADQALAAAAACMABYAAAb/QFpsSCwaj8ikcslsOp/QaOxFa1mv2Kx2y+16v+CweEy2Ol6stHrNbrvf8Lh8Tq/b7+kDAsbv+/+AgYKDhIWGh4iJinwCASmPkJGPMpKVlpeYmZqbnJ2eno0ooqOkojKlqKinqaytq62usKgDsrW2qY0luru7EhEywBESvMTEMsXIybzHys3MzbwD0LrS09a7jSba29wQAzIDENzj5DLk5+jc5uns6+zcA+/a8fL1240z+fr5HB0zGTIyzADhYZ/BGcCA6Uu4MJ8Mhw4ZQoz4cKFCixcPzhjAcYC+jh4/cswHkuRIjSgP4tOYgEK+EPkoJEhZEeFEmzgr6myYk+e+/503D4bcSPJj0aNDk6Zcmm/lQQUTDE5QQJNnzZ0Ps94EehUjUJwalRJFanSs2aFMNTYCwLYt2wQX3AK4kECuWxlt8QLQu5ct3r99AwfWy5dwXr+H7bId0JYxAMePFzeWTDmy4styG5HYzHmzhQ2dSWywELqzDM6nSaRWjbr15tWpY7uG/dp1aRIDOOfGrXvzbt7Ag/++TZxzI0ENKixg8IHBggoNCCWU0SehH+p8sMPQjp07sOvWs4cPBLLPAPPmOfpRD6Pjoj+NTsifP1/DAwwKMDzQQL+///8ABijggAMOQOCBCA7YiBQMNujggxA+2IgKFFZo4YUYZqjhhhx26KLhhyCGKCKFjbxg4okopqjiiiy26OKLMMYo44w0mtjICjjmqOOOPPbo449ABinkkEQWaSSOjbig5JJMNunkk1BGKeWUVFZp5ZVYKqmHCyOIQMCXYIYp5phklmmmmAKkqeaabLbpppsHvClAnG/SCaecch7gAA00uBCAAYAGKuigBRRq6KGIJqqoogE06uijkEYqqaQITBpApZNiSqmlliLAZxAAOw=="
+                            alt="download photo"
+                        /></a>
+                      </p>
+                      <hr />
+                      <p>See <a href="/albums">more photos</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="divContact" style="min-height: 90px">
+                <div style="transition: 0.3s linear">
+                  <h4>Contact information</h4>
+                  <p>
+                    &nbsp;&nbsp;<span
+                      class="glyphicon glyphicon-phone-alt"
+                      style="color: gray"
+                    ></span
+                    >&nbsp;010-123 456
+                  </p>
+                  <p>
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAWdJREFUSEvFVKFuAkEQRSJx5RMqkchKJJ/AJ1RW1tU0qUAgkUg+ARyyskkNdciraUiKON4jO5fJ3GxuN8fBJJu7nZudN+/NzvXKsux1vToHIAGCdG53ATmC1kvLHs1wvtDyxJjsEPSYCTZA/NrTXoMwsbYcVhMcPJjze9lrEL5TKibXtsFmGGHVh3/hVL+Ej8wuZkG4p0yWVQEftdZXfoz9lwEgG7KSuCiIBLxFKnyA3/u2CtXrQhpBKMWPA/RvfH/Y/2I9OZI2gki134icO2B0bbDew7fPXBDqLSYVUusiOE94yjyRsfTm2QBFmehDH+YQb8wWy87QNICz8YxpbLzItEcwAVN/ousApAtzmXgypYKQnczYKBRXA2HVbB6NA5aaXMeRBY1zVs2gHsbXEJArkwZhofJ74fDWmAhV777nsJLk1b9MMyGqblpOYhsrsteYCLurPy2TqwMwYRtJks8mB7Yp6CYgZ5ZzZHWA82AMAAAAAElFTkSuQmCC"
+                      alt="epost"
+                      class="img-responsive"
+                    />
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title text-center">Today's weather</h3>
+                    </div>
+                    <div class="panel-body panel-height_small">
+                      <div id="divWeather">
+                        <div style="transition: 0.3s linear">
+                          <a
+                            class="weatherwidget-io"
+                            href="https://forecast7.com/en/40d71n74d01/new-york/"
+                            data-label_1="NEW YORK"
+                            data-label_2="WEATHER"
+                            data-theme="original"
+                            style="
+                              display: block;
+                              position: relative;
+                              height: 568px;
+                              padding: 0px;
+                              overflow: hidden;
+                              text-align: left;
+                              text-indent: -299rem;
+                            "
+                            >NEW YORK WEATHER<iframe
+                              id="weatherwidget-io-0"
+                              class="weatherwidget-io-frame"
+                              title="Weather Widget"
+                              scrolling="no"
+                              frameborder="0"
+                              width="100%"
+                              src="https://weatherwidget.io/w/"
+                              style="
+                                display: block;
+                                position: absolute;
+                                top: 0px;
+                                height: 568px;
+                              "
+                            ></iframe
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-md-height">
+          <div class="row">
+            <div class="col-md-12"><h4></h4></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel 1</h3>
+                </div>
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas euismod orci velit, id tincidunt massa mollis ac.
+                  Aliquam volutpat facilisis lacinia. Aenean auctor justo non
+                  faucibus efficitur. Sed mollis, orci faucibus suscipit
+                  pellentesque, nunc augue blandit ante, eget gravida ex erat
+                  sed lectus. Mauris eu congue lacus, gravida aliquam ligula.
+                  Aenean in diam eget mi tincidunt iaculis. Sed ac mi velit. Nam
+                  vestibulum, metus id auctor bibendum, purus mi congue urna,
+                  vitae maximus nibh orci eu orci. Donec viverra nisl diam,
+                  pellentesque tincidunt risus hendrerit nec. Nulla at magna
+                  dui. Mauris nec tristique enim. Ut a feugiat odio. Nullam
+                  efficitur bibendum lorem. Curabitur pharetra risus neque, a
+                  molestie quam ultrices at. Etiam molestie libero odio.
+                  Suspendisse volutpat, justo vitae varius facilisis, quam ex
+                  placerat orci, sit amet cursus ante mi et purus. Vivamus dolor
+                  sem, suscipit ut nisl id, malesuada commodo metus. Ut at orci
+                  non arcu ornare fringilla pharetra non nunc. Suspendisse arcu
+                  odio, commodo nec porta et, viverra et arcu. Nullam nec
+                  lacinia velit. Pellentesque commodo fringilla est, sed
+                  ullamcorper risus vestibulum vitae. Nunc facilisis, eros vitae
+                  rhoncus consectetur, velit magna interdum felis, quis
+                  convallis arcu nisl a lorem. Proin gravida, elit non volutpat
+                  maximus, urna purus commodo ante, quis viverra lectus urna
+                  eget nisi.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel 2</h3>
+                </div>
+                <div class="panel-body">
+                  Phasellus diam dolor, molestie quis arcu nec, fermentum
+                  lobortis ante. Nunc sagittis condimentum felis sit amet
+                  ultrices. Donec aliquam dolor sit amet tempor elementum. Proin
+                  auctor justo mi, quis consectetur tortor molestie at. Sed
+                  aliquet odio turpis, at efficitur justo egestas quis. Duis
+                  facilisis dui arcu, sit amet ullamcorper lacus tristique id.
+                  Donec euismod arcu urna, sed pellentesque nibh ornare et. Duis
+                  sed imperdiet neque. Morbi fermentum scelerisque quam non
+                  luctus. Vestibulum vehicula sollicitudin nibh, quis hendrerit
+                  massa ullamcorper a. Quisque posuere euismod elit, nec rutrum
+                  tellus pellentesque in. Nulla facilisi. Donec fringilla, neque
+                  ac vulputate rutrum, nisl tortor facilisis urna, ac cursus
+                  urna nibh vitae odio. Nunc lorem dui, consequat nec ex eget,
+                  lobortis pharetra nibh. Nunc pretium odio nisl, vel gravida
+                  urna tristique at. Mauris ut nibh quis lorem vulputate
+                  ullamcorper. Quisque condimentum purus vitae massa porttitor,
+                  in feugiat elit blandit. Praesent lectus tortor, molestie nec
+                  libero vitae, aliquam aliquam sapien. Quisque blandit iaculis
+                  mauris eu feugiat. Aenean eget diam quis elit pretium
+                  vestibulum. Donec velit sapien, commodo eu posuere et, commodo
+                  sit amet purus. Aliquam erat volutpat. Maecenas non hendrerit
+                  ligula, quis feugiat risus. Morbi et efficitur mauris.
+                  Curabitur ut bibendum elit. Pellentesque sit amet cursus nunc.
+                  Donec rhoncus et dui at tempus. Vestibulum et nibh pulvinar
+                  nibh bibendum bibendum non finibus velit. Maecenas non odio
+                  ultrices, dignissim odio id, ullamcorper tortor. Curabitur
+                  lacinia arcu et malesuada sollicitudin. Integer sed cursus
+                  felis. Aenean porta, tortor vel aliquet tempor, neque lectus
+                  euismod dolor, non dapibus ligula nisl ut nisl.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+<!-- </div> -->
