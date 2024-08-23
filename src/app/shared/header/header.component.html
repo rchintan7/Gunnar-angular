@@ -1,18 +1,11 @@
-<header
-  class="navbar navbar-expand-lg navbar-light bg-light"
-  style="
-    background-image: url('../../../assets/Content/images/BootstrapHeaderComposed.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 81px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  "
->
-  <div class="container">
-    <a class="navbar-brand pb-5 mb-3" href="/">
-      <div
+<div>
+  <header
+    class="navbar navbar-expand-lg navbar-light bg-light"
+    [ngStyle]="{ background: todaysHeaderCss, height: '81px', margin: '0' }"
+  >
+    <div class="container">
+      <a class="navbar-brand pb-5 mb-3" href="/">
+        <div
         style="
           background-color: rgb(34, 34, 34);
           height: 50px;
@@ -22,7 +15,7 @@
       >
         <div style="display: inline; text-align: left">
           <img
-            src="/static/media/logo.d3531aeba7ef705bd982c16af3b20faa.svg"
+            src="/assets/logo.png"
             alt="angular Logo"
             style="
               animation: 10s linear 0s infinite alternate none running
@@ -34,48 +27,87 @@
         <div style="display: inline; text-align: center">Angular Home Page</div>
         <div style="display: inline; text-align: right">
           <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfeBgsJJgEHqS1jAAAAGnRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS4xMUfzQjcAAAF6SURBVEhLtZa9SgNBEMcjiqAQEBvLewsRmzSCfRBbm4C1lc9iI/gE19tZ+QDBMmCVKk9gxHN+w96xGdbbuTVZGJK7+3/c7Mzu3qhpmlEmKnk+k6gllhLr8Ms193neq9H38ELIcwnPAAc+qZe6eSTgZ49yAgMP/oauNTkNU1HooTSmFJ1OOzbhDQBsY6DTZRSblE7RXy+Fnuq3JhTNO94FOA4Ce/I77SFqM7Qm3i5C79AWtscEXTWpvCkEnG2Wgwy/gsCCGjKuo0yO5f9bhjzDpB7iUICtMfG2bWrhPjhMlxDZizzj1hSczvp2ENdDMrHbhbdhNBNPTT5MFvBeHFkA0Zp4uuvSmOw7DYBpd3nSZi3EhT+Xa8IzdJ0QuRVvO+tGOI8Oh27FI5DbuyaCoZvAMlX3DgMgV3B2uQtjorXc1XnSJvpkTTDcxskYz+RrygSj/5zxC+F/RS5sWRvTZTuo9GvlRIQ5FX+C2V1q07P3KgGXfHedCe9TYvULEwj+POvrCOQAAAAASUVORK5CYII="
+            src="/assets/images/info.png"
             alt="logo"
             class="logo"
           />
         </div>
       </div>
-    </a>
-    <button class="navbar-toggler" type="button">
-      <span class="navbar-toggler-icon">
-        <img
-          src="data:image/png;base64,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"
-          alt="Hamburger Icon"
-      /></span>
-    </button>
-    <div class="collapse navbar-collapse navbar-nav-container">
-      <ul class="navbar-nav navbar-nav-main spriteTabs">
-        <li class="nav-item">
-          <a aria-current="page" class="nav-link no-underline active" href="/"
-            >Home<span></span
-          ></a>
+      </a>
+      <button #elCollapseButton class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon">
+          <img src="assets/images/Hamburger.png" alt="Hamburger Icon" />
+        </span>
+      </button>
+      <div class="collapse navbar-collapse navbar-nav-container">
+        <ul class="navbar-nav navbar-nav-main spriteTabs">
+          <li class="nav-item">
+            <a
+              class="nav-link no-underline active"
+              routerLink="/"
+              (click)="closeSidebar()"
+              >Home<span></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link no-underline"
+              routerLink="/albums"
+              (click)="closeSidebar()"
+              >Album<span></span
+            ></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right spriteTabs">
+          <li class="nav-item">
+            <a
+              href="https://www.google.com/maps/place/Statue+of+Liberty"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-link no-underline"
+            >
+              <span></span>&nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i
+              ><span></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/user" class="nav-link no-underline">
+              <span></span>&nbsp;<i class="fas fa-user"></i><span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div #sidebarRef class="sidebar" [ngClass]="{ open: sidebarOpen }">
+    <div class="sidebar-header">
+      <a
+        href="https://www.google.com/maps/place/Statue+of+Liberty/@40.688969,-113.0657959,4z/data=!4m10!1m2!2m1!1sstaue+of+liberty!3m6!1s0x89c25090129c363d:0x40c6a5770d25022b!8m2!3d40.6892494!4d-74.0445004!15sChFzdGF0dWUgb2YgbGliZXJ0eVoTIhFzdGF0dWUgb2YgbGliZXJ0eZIBE2hpc3RvcmljYWxfbGFuZG1hcmvgAQA!16zL20vMDcycDg?entry=ttu"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-link no-underline"
+      >
+        <span></span>&nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i
+        ><span></span>
+      </a>
+      <a routerLink="/user" class="nav-link" (click)="closeSidebar()"
+        ><i class="fas fa-user"></i
+      ></a>
+      <a class="nav-link" (click)="closeSidebar()"
+        ><i class="fas fa-close"></i
+      ></a>
+    </div>
+    <div class="nav-list">
+      <ul class="navbar-nav">
+        <li #homeLi class="nav-item">
+          <a routerLink="/" class="nav-link" (click)="closeSidebar()">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link no-underline" href="/albums">Album<span></span></a>
-        </li>
-      </ul>
-      <ul class="navbar-nav navbar-nav-right spriteTabs">
-        <li class="nav-item">
-          <a
-            href="https://www.google.com/maps/place/Statue+of+Liberty/@40.688969,-113.0657959,4z/data=!4m10!1m2!2m1!1sstaue+of+liberty!3m6!1s0x89c25090129c363d:0x40c6a5770d25022b!8m2!3d40.6892494!4d-74.0445004!15sChFzdGF0dWUgb2YgbGliZXJ0eVoTIhFzdGF0dWUgb2YgbGliZXJ0eZIBE2hpc3RvcmljYWxfbGFuZG1hcmvgAQA!16zL20vMDcycDg?entry=ttu"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-link no-underline"
-            ><span></span>&nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i
-            ><span></span
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link no-underline" href="/user"
-            ><span></span>&nbsp;<i class="fas fa-user"></i><span></span
-          ></a>
+        <li #albumsLi class="nav-item">
+          <a routerLink="/albums" class="nav-link" (click)="closeSidebar()"
+            >Album</a
+          >
         </li>
       </ul>
     </div>
   </div>
-</header>
+</div>

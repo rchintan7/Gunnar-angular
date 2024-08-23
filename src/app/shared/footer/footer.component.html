@@ -1,15 +1,10 @@
 <footer>
     <div
-      class="bg-cover bg-center h-[81px] w-full text-white flex justify-center items-center"
-      :style="{
-        backgroundImage:
-          'url(' +
-          require('@/assets/Content/images/BootstrapHeaderComposed.jpg') +
-          ')',
-      }"
+      class="flex justify-center items-center"
+      [ngStyle]="{ background: todaysHeaderCss, height: '81px' }"
     >
-    <p class="bg-black p-2">
+    <!-- <p class="p-2"> -->
       © 2024 - Angular Homepage Ltd.
-    </p>
+    <!-- </p> -->
     </div>
   </footer>

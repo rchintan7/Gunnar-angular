@@ -25,10 +25,14 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public/assets",
+                "output": "/assets"
+              }
             ],
             "styles": [
-              "src/assets/Content/site.css",
+              "public/styles.scss",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/bootstrap-css-only/css/bootstrap.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.css",
@@ -99,13 +103,13 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

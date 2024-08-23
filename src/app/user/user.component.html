@@ -1,16 +1,20 @@
-<div class="flex items-center justify-center custom-height-user text-xl">
-  <div class="rounded-lg border border-black">
-    <div class="border-b border-gray-300 p-4">
-      <p class="font-semibold mb-2">log in</p>
-      <input
-        type="password"
-        placeholder="Password"
-        class="border border-black p-2 rounded-lg"
-      />
+<div class="d-flex align-items-center justify-content-center custom-height-user">
+  <div class="card border-dark">
+    <div class="card-header border-bottom">
+      <h5 class="card-title mb-0">Log in</h5>
     </div>
-    <div class="flex gap-2 text-white text-base p-4">
-      <button class="p-2 bg-gray-600 rounded-lg text-white">Cancel</button>
-      <button class="p-2 bg-primary rounded-lg text-white">Log in</button>
+    <div class="card-body">
+      <div class="mb-3">
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+        />
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-secondary" (click)="redirectToHome()">Cancel</button>
+      <button class="btn btn-primary">Log in</button>
     </div>
   </div>
 </div>
