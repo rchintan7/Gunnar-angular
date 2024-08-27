@@ -6,33 +6,31 @@
     <div class="container">
       <a class="navbar-brand pb-5 mb-3" href="/">
         <div
-        style="
-          background-color: rgb(34, 34, 34);
-          height: 50px;
-          width: auto;
-          color: red;
-        "
-      >
-        <div style="display: inline; text-align: left">
-          <img
-            src="/assets/logo.png"
-            alt="angular Logo"
-            style="
-              animation: 10s linear 0s infinite alternate none running
-                RSI-isz5l8c1u;
-              width: 50px;
-            "
-          />
+          style="
+            background-color: rgb(34, 34, 34);
+            height: 50px;
+            width: auto;
+            color: red;
+          "
+        >
+          <div style="display: inline; text-align: left">
+            <img
+              src="/assets/logo.png"
+              alt="angular Logo"
+              style="
+                animation: 10s linear 0s infinite alternate none running
+                  RSI-isz5l8c1u;
+                width: 50px;
+              "
+            />
+          </div>
+          <div style="display: inline; text-align: center">
+            Angular Home Page
+          </div>
+          <div style="display: inline; text-align: right">
+            <img src="/assets/images/info.png" alt="logo" class="logo" />
+          </div>
         </div>
-        <div style="display: inline; text-align: center">Angular Home Page</div>
-        <div style="display: inline; text-align: right">
-          <img
-            src="/assets/images/info.png"
-            alt="logo"
-            class="logo"
-          />
-        </div>
-      </div>
       </a>
       <button #elCollapseButton class="navbar-toggler" type="button">
         <span class="navbar-toggler-icon">
@@ -46,6 +44,8 @@
               class="nav-link no-underline active"
               routerLink="/"
               (click)="closeSidebar()"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Home<span></span
             ></a>
           </li>
@@ -54,6 +54,8 @@
               class="nav-link no-underline"
               routerLink="/albums"
               (click)="closeSidebar()"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Album<span></span
             ></a>
           </li>
@@ -71,7 +73,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/user" class="nav-link no-underline">
+            <a
+              routerLink="/user"
+              class="nav-link no-underline"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
               <span></span>&nbsp;<i class="fas fa-user"></i><span></span>
             </a>
           </li>
